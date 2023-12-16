@@ -84,6 +84,10 @@ body{
     scroll-snap-align: start;
 }
 
+.ham{
+    display: none;
+}
+
 /* Intro */
 .intro{
     height: 100vh;
@@ -187,7 +191,7 @@ body{
     padding-top: 5vh;
 }
 
-.bestBook-book-img{
+.book_cover{
     border: solid black 1px;
     height: 100%;
 }
@@ -567,39 +571,39 @@ body{
         height: 94vh;
         width: 96vw;
     }
-    .bestBook-section{
+    .bs_cont{
         display: flex;
         flex-flow: row wrap; 
     }
 
-    .bestBook-book{
+    .book_cont{
         height: 40vh;
         width: 40vw;
         margin: 2vw;
         border-radius: 1vh;
     }
 
-    .bestBook-book:hover{
+    .book_cont:hover{
         height: 45vh;
         width: 40vw;
         transition: all 0.5s ease-in-out;
     }
 
-    .bestBook-book-text1{
+    .book_title{
         font-size: 2vh;
         height: 6vh;
         width: 100%;
     }
 
-    .bestBook-book-img{
+    .book_cover{
         height: 20vh;
     }
 
-    .bestBook-book-text2{
+    .book_desc{
         display: none;
     }
 
-    .bestBook-img-wrapper{
+    .book_cover_box{
         height: 20vh;
         width: 40vw;
         padding: 0;
@@ -608,24 +612,12 @@ body{
         align-items: center;
     }
 
-    .bestBook-book-text3{
-        padding: 0;
-    }
-
-    .bestBook-book-text3-1{
+    .book_prop_cont{
         padding-top: 0.5vh;
-        font-size: 1.6vh;
-    }
-
-    .bestBook-book-text3-2{
         font-size: 1.1vh;
     }
 
-    .bestBook-book-text3-3{
-        font-size: 1.5vh;
-    }
-
-    .bestBook-book-button-wrapper{
+    .button_cont{
         padding-top: 2vh;
         height: 9vh;
         width: 100%;
@@ -634,119 +626,71 @@ body{
 
     /*recommendation*/
 
-    .recc{
+    .ReccSection{
         height: 94vh;
         width: 96vw;
     }
 
-    .recc-title{
+    .recc_heading{
         height: 14vh;
     }
 
-    .recc-search-bar{
+    .recc_search{
         height: 10vh;
         width: 96vw;
     }
 
-    .recc-search-bar button{
+    .recc_search_button{
         width: 10vw;
-    }
-
-    .recc-books-section{
-        height: 70vh;
-        width: 96vw;
-        padding-top: 0;
-        padding-left: 0;
-    }
-
-    .recc-book{
-        height: 19vh;
-        width: 20vw;
-        margin: 2vw;
-    }
-
-    .recc-book:hover{
-        height: 21vh;
-        width: 20vw;
-        transition: all 0.5s ease-in-out;
-    }
-
-    .recc-book-img{
-        height: 10vh;
-    }
-
-    .recc-book-img-wrapper{
-        height: 14vh;
-        padding-top: 0;
-    }
-
-    .recc-book-text1{
-        height: 2vh;
-        padding: 0;
-        font-size: 1.2vh;
-        font-weight: bold;
     }
 
     /*review*/
 
-    .review{
+    .ReviewSection{
         height: 94vh;
         width: 96vw;
     }
 
-    .review-title{
+    .review_title{
         height: 8vh;
     }
 
-    .review-inp-title{
+    .review_subtitle{
         height: 4vh;
     }
 
-    .review-inp-left{
+    .review_add_name{
         width: 40vw;
     }
 
-    .review-inp-left input[type=text]{
+    .review_add_name input[type=text]{
         width: 35vw;
     }
 
-    .review-inp-right{
+    .review_add_desc{
         width: 44vw;
     }
 
-    .review-inp-right button{
+    .review_add_desc button{
         width: 34vw;
     }
 
-    .review-inp-right textarea{
+    .review_add_desc textarea{
         height: 10vh;
     }
 
-    .review-data{
+    .reviews{
         gap: 5vw;
     }
 
-    .review-data-item-name{
+    .reviewer_name{
         height: 2vh;
         font-size: 1.5vh;
     }
-    
-    .review-data-item-email{
-        height: 2vh;
-        font-size: 1vh;
-    }
 
-    .review-data-item-desc{
+    .review_desc{
         height: 5vh;
         font-size: 1.1vh;
-    }
-
-    .review-data-item-img-wrapper{
-        padding-bottom: 2vh;
-    }
-
-    .review-data-item-img{
-        outline: solid #30C2EC 2px;
     }
 
     .footer{
