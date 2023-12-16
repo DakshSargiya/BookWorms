@@ -1,0 +1,755 @@
+*{
+    scroll-behavior: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-y: hidden;
+    /* padding-left: none; */
+    padding: 0px;
+}
+
+.navbar{
+    width: 99vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1vh;
+    position: fixed;
+    top: 0;
+    padding-bottom: 1vh;
+    padding-right: 5px;
+    margin-bottom: 7vh;
+    background-color: #dedddd;
+    height: 6vh;
+}
+
+.nav_items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_items a{
+    padding-left: 4vw;
+    padding-top: 1vh;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav_items a:hover{
+    color: #33C2EC;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav_items a.active{
+    color: #33C2EC;
+}
+
+.logo{
+    height: 100%;
+    width: 10vw;
+    padding-left: 2vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo_img{
+    width: 100%;
+    height: 100%;
+}
+
+.logo_txt{
+    font-weight: 800;
+    font-size: large;
+    padding-top: 1vh;
+    width: 10vw;
+    height: 5vh;
+    padding-left: 1vw;
+
+}
+
+.container{
+    height: 100vh;
+}
+
+.content{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 93vh;
+}
+
+.content > div{
+    scroll-snap-align: start;
+}
+
+/* Intro */
+.intro{
+    height: 100vh;
+    width: 99vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.intro_left{
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dedddd;
+}
+
+.intro_img{
+    width: 59vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/logo.jpg);
+}
+
+.intro_title{
+    font-size: 10vh;
+    font-family: 'Sedgwick Ave Display', cursive;
+    color: #401414;
+    font-weight: bold;
+    /* color: #ebeb57; */
+}
+
+.intro_title1{
+    font-size: 6vh;
+    font-family: 'Gluten', cursive;
+    font-weight: bold;
+}
+
+.intro_tagline{
+    font-size: 4vh;
+    font-weight: 800;
+    font-family: 'Monsieur La Doulaise', cursive;
+}
+
+.intro_title_description{
+    padding: 0;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+/*BestSeller*/
+#BestSeller{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.BestSeller{
+    /* margin-top: 60px; */
+    height: 93vh;
+    width: 98vw;
+}
+
+.bs_heading{
+    height: 9vh;
+    width: 98vw;
+    text-align: center;
+    font-size: 5vh;
+    font-weight: bolder;
+    font-family: 'Gluten', cursive;
+    color: #401414;
+}
+
+.bs_cont{
+    height: 86vh;
+    width: 98vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.book_cont{
+    height: 72vh;
+    width: 20vw;
+    /* background-color: white; */
+    overflow-y: hidden;
+}
+
+.book_cont:hover{
+    height: 80vh;
+    width: 20vw;
+    transition: all 0.3s ease-out;
+}
+
+.book_cover_box{
+    height: 30vh;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+}
+
+.bestBook-book-img{
+    border: solid black 1px;
+    height: 100%;
+}
+
+.book_title{
+    font-size: 2.5vh;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.book_desc{
+    height: 17vh;
+    font-size: 1.75vh;
+    width: 20vw;
+    text-align: center;
+    padding-bottom: 1vh;
+}
+
+.book_prop_cont{
+    padding-bottom: 2vh;
+    text-align: center;
+}
+
+.button_cont{
+    height: 7vh;
+    width: 18vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.2vh;
+}
+
+.buttons{
+    width: 10vw;
+    height: 3vh;
+    background-color: #823939;
+    border: none;
+    border-radius: 2vw;
+    font-size: 1.5vh;
+    color: white;
+    text-align: center;
+    padding-top: 0.5vh;
+}
+
+.buttons:hover{
+    background-color: #0096ff;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+
+/*recommendation*/
+
+#ReccSection{
+    /* margin-top: 10vh; */
+    margin-bottom: 10vh;
+}
+
+.ReccSection{
+    height: 93vh;
+    width: 98vw;
+    margin-bottom: 9vh;
+}
+
+.recc_heading{
+    font-size: 5vh;
+    height: 7vh;
+    width: 98vw;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Gluten', cursive;
+    color: #401414;
+}
+
+.recc_search{
+    height: 7vh;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.recc_search input[type=text]{
+    height: 5vh;
+    width: 50vw;
+    border: solid black 1px;
+    border-radius: 0.5vw;
+    padding-left: 2vw;
+    font-size: 2vh;
+}
+
+.recc_search_button{
+    height: 5.5vh;
+    width: 2.75vw;
+    border: solid black 1px;
+    border-radius: 2vw;
+    background-color: #823939;
+    color: white;
+    font-size: 2vh;
+    cursor: pointer;
+}
+
+.recc_search_button:hover{
+    background-color: dodgerblue;
+    transition: background-color 0.2s ease-in-out;
+}
+
+
+/*review*/
+#ReviewSection{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.ReviewSection{
+    height: 93vh;
+    width: 98vw;
+}
+
+.review_title{
+    height: 7vh;
+    width: 98vw;
+    text-align: center;
+    font-size: 5vh;
+    font-family: 'Gluten', cursive;
+    color: #401414;
+}
+
+.review_subtitle{
+    height: 7vh;
+    width: 98vw;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.add_review{
+    height: 30vh;
+    width: 98vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.review_add_name{
+    height: 30vh;
+    width: 49vw;
+    background-color: white;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh;
+}
+
+.review_add_name input[type=text]{
+    height: 5vh;
+    width: 30vw;
+    border: solid black 1px;
+    padding-left: 2vw;
+}
+
+.review_add_desc{
+    height: 30vh;
+    width: 60vw;
+    background-color: white;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh;
+}
+
+.desc_textarea{
+    height: 9vh;
+    width: 40vw;
+    margin-top: 3vh;
+    border: solid black 1px;
+    padding-left: 2vw;
+    font-size: 2vh;
+}
+
+.review_submit_button{
+    height: 5vh;
+    width: 10vw;
+    border: solid black 1px;
+    background-color: #823939;
+    color: white;
+    font-size: 2vh;
+    border-radius: 0.5vw;
+}
+
+.review_submit_button:hover{
+    background-color: dodgerblue;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.review-data-title{
+    height: 7vh;
+    width: 98vw;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.reviews{
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 5vh;
+    height: 38vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.review_box{
+    height: 34vh;
+    width: 20vw;
+    background-color: white;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    justify-content: center;
+    outline: dotted black 2px;
+    border-radius: 1.75vh;
+}
+
+.reviewer_name{
+    height: 5vh;
+    width: 100%;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: bold;
+    margin: 4vh 0;
+}
+
+.review_desc{
+    height: 10vh;
+    width: 100%;
+    font-family: 'Monsieur La Doulaise', cursive;
+    text-align: center;
+    font-size: 4vh;
+}
+
+/*footer*/
+#footer{
+    margin: 10vh 0;
+}
+
+.footer{
+    padding-left: 4vw;
+    padding-right: 4vw;
+    width: 86vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.social_cont{
+    padding-top: 5vh;
+    width: 100%;
+    gap: 2vh;
+    margin-bottom: 10vh;
+}
+
+.socials a{
+    text-decoration: none;
+    color: black;
+}
+
+.socials a:hover{
+    color: #30C2EC;
+    transition: color 0.2s ease-in-out;
+}
+
+.back_to_top_btn{
+    margin-top: 4vh;
+    height: 5vh;
+    width: 15vh;
+    background-color: #823939;
+    border: none;
+    border-radius: 5vw;
+    font-size: 2vh;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.back_to_top_btn:hover{
+    background-color: #0096ff;
+    transition: background-color 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 1360px){
+    .navbar{
+        background-color: #ffffff;
+        height: 5vh;
+    }
+    .nav_items{
+        display: none;
+    }
+
+    .logo_txt{
+        width: 40vw;
+    }
+
+    .logo{
+        width: 100vw;
+        height: 4vh;
+    }
+
+    .logo_img{
+        width: 10vw;
+        height: 4vh;
+    }
+    
+    .ham{
+        display: block;
+        font-size: 40px;
+        padding-right: 10vw;
+    }
+
+    .ham-img{
+        text-decoration: none;
+        display: block;
+    }
+
+    .ham-close{
+        display: none;
+        z-index: 3;
+        position: fixed;
+        top: 1vh;
+        right: 10vw;
+    }
+
+    #ham-check{
+        position: fixed;
+        top: 2vw;
+        right: 2vw;
+        z-index: 2;
+    }
+
+    .navbar:has(.ham input[type="checkbox"]:checked) .ham .ham-close{
+        display: block;
+    }
+
+    .navbar:has(.ham input[type="checkbox"]:checked) .ham .ham-img{
+        display: none;
+    }
+
+    .navbar:has(.ham input[type="checkbox"]:checked) .nav-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 30vh;
+        border: #1A43bf 2px solid;
+        background-color: #ffffff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    .container{
+        overflow-x: hidden;
+    }
+
+    /*main*/
+    
+    /*bestbook*/
+    .BestSeller{
+        height: 94vh;
+        width: 96vw;
+    }
+    .bestBook-section{
+        display: flex;
+        flex-flow: row wrap; 
+    }
+
+    .bestBook-book{
+        height: 40vh;
+        width: 40vw;
+        margin: 2vw;
+        border-radius: 1vh;
+    }
+
+    .bestBook-book:hover{
+        height: 45vh;
+        width: 40vw;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .bestBook-book-text1{
+        font-size: 2vh;
+        height: 6vh;
+        width: 100%;
+    }
+
+    .bestBook-book-img{
+        height: 20vh;
+    }
+
+    .bestBook-book-text2{
+        display: none;
+    }
+
+    .bestBook-img-wrapper{
+        height: 20vh;
+        width: 40vw;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bestBook-book-text3{
+        padding: 0;
+    }
+
+    .bestBook-book-text3-1{
+        padding-top: 0.5vh;
+        font-size: 1.6vh;
+    }
+
+    .bestBook-book-text3-2{
+        font-size: 1.1vh;
+    }
+
+    .bestBook-book-text3-3{
+        font-size: 1.5vh;
+    }
+
+    .bestBook-book-button-wrapper{
+        padding-top: 2vh;
+        height: 9vh;
+        width: 100%;
+        gap: 2vh;
+    }
+
+    /*recommendation*/
+
+    .recc{
+        height: 94vh;
+        width: 96vw;
+    }
+
+    .recc-title{
+        height: 14vh;
+    }
+
+    .recc-search-bar{
+        height: 10vh;
+        width: 96vw;
+    }
+
+    .recc-search-bar button{
+        width: 10vw;
+    }
+
+    .recc-books-section{
+        height: 70vh;
+        width: 96vw;
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .recc-book{
+        height: 19vh;
+        width: 20vw;
+        margin: 2vw;
+    }
+
+    .recc-book:hover{
+        height: 21vh;
+        width: 20vw;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .recc-book-img{
+        height: 10vh;
+    }
+
+    .recc-book-img-wrapper{
+        height: 14vh;
+        padding-top: 0;
+    }
+
+    .recc-book-text1{
+        height: 2vh;
+        padding: 0;
+        font-size: 1.2vh;
+        font-weight: bold;
+    }
+
+    /*review*/
+
+    .review{
+        height: 94vh;
+        width: 96vw;
+    }
+
+    .review-title{
+        height: 8vh;
+    }
+
+    .review-inp-title{
+        height: 4vh;
+    }
+
+    .review-inp-left{
+        width: 40vw;
+    }
+
+    .review-inp-left input[type=text]{
+        width: 35vw;
+    }
+
+    .review-inp-right{
+        width: 44vw;
+    }
+
+    .review-inp-right button{
+        width: 34vw;
+    }
+
+    .review-inp-right textarea{
+        height: 10vh;
+    }
+
+    .review-data{
+        gap: 5vw;
+    }
+
+    .review-data-item-name{
+        height: 2vh;
+        font-size: 1.5vh;
+    }
+    
+    .review-data-item-email{
+        height: 2vh;
+        font-size: 1vh;
+    }
+
+    .review-data-item-desc{
+        height: 5vh;
+        font-size: 1.1vh;
+    }
+
+    .review-data-item-img-wrapper{
+        padding-bottom: 2vh;
+    }
+
+    .review-data-item-img{
+        outline: solid #30C2EC 2px;
+    }
+
+    .footer{
+        font-size: 1vh;
+    }
+}
